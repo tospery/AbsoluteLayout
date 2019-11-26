@@ -22,7 +22,7 @@ pod 'AbsoluteLayout'
 
 ## Author
 
-tospery, yangjianxiang@cd.tuan800.com
+yangjianxiang, tospery@gmail.com
 
 ## License
 
