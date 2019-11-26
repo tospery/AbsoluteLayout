@@ -46,8 +46,8 @@ extension UIScrollView {
     }
     
     public var viewportRight: CGFloat {
-        get { return contentOffset.x + width }
-        set { contentOffset.x = snap(newValue - width) }
+        get { return contentOffset.x + al_width }
+        set { contentOffset.x = snap(newValue - al_width) }
     }
     
     public var viewportTop: CGFloat {
@@ -56,8 +56,8 @@ extension UIScrollView {
     }
 
     public var viewportBottom: CGFloat {
-        get { return contentOffset.y + height }
-        set { contentOffset.y = snap(newValue - height) }
+        get { return contentOffset.y + al_height }
+        set { contentOffset.y = snap(newValue - al_height) }
     }
     
 }

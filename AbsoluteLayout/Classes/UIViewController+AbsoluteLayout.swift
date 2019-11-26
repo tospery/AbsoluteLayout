@@ -9,50 +9,50 @@ import UIKit
 
 extension UIViewController {
 
-    public var viewBounds: CGRect {
+    public var al_bounds: CGRect {
         return view.bounds
     }
 
     // MARK: - Center
-    public var viewCenterX: CGFloat {
+    public var al_centerX: CGFloat {
         return view.al_centerX
     }
 
-    public var viewCenterY: CGFloat {
+    public var al_centerY: CGFloat {
         return view.al_centerY
     }
     
-    public var viewCenter: CGPoint {
+    public var al_center: CGPoint {
         return view.center
     }
 
     // MARK: - Size
-    public var viewWidth: CGFloat {
+    public var al_width: CGFloat {
         return view.al_width
     }
 
-    public var viewHeight: CGFloat {
+    public var al_height: CGFloat {
         return view.al_height
     }
     
-    public var viewSize: CGSize {
+    public var al_size: CGSize {
         return view.al_size
     }
 
     // MARK: - Edges
-    public var viewLeft: CGFloat {
+    public var al_left: CGFloat {
         return 0
     }
     
-    public var viewRight: CGFloat {
+    public var al_right: CGFloat {
         return view.al_width
     }
     
-    public var viewTop: CGFloat {
+    public var al_top: CGFloat {
         return topLayoutGuide.length
     }
 
-    public var viewBottom: CGFloat {
+    public var al_bottom: CGFloat {
         return view.al_height - bottomLayoutGuide.length
     }
     
