@@ -1,0 +1,16 @@
+PODS:
+  - AbsoluteLayout (1.0.0)
+
+DEPENDENCIES:
+  - AbsoluteLayout (from `../`)
+
+EXTERNAL SOURCES:
+  AbsoluteLayout:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AbsoluteLayout: d705aebdc3e28ed5f24c9b0ef4ac52441c414a27
+
+PODFILE CHECKSUM: 51b43db55f1317afae785641106990e332da5ec7
+
+COCOAPODS: 1.7.3

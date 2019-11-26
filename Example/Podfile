@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AbsoluteLayout_Example' do
+  pod 'AbsoluteLayout', :path => '../'
+
+  target 'AbsoluteLayout_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
