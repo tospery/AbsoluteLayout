@@ -94,3 +94,45 @@ public func offset(_ point: CGPoint, dx: CGFloat, dy: CGFloat) -> CGPoint {
     return CGPoint(x: point.x + dx, y: point.y + dy)
 }
 
+// MARK: - rect
+public func rect(_ original: CGRect, x: CGFloat) -> CGRect {
+    var rect = original
+    rect.origin.x = snap(x)
+    return rect
+}
+
+public func rect(_ original: CGRect, y: CGFloat) -> CGRect {
+    var rect = original
+    rect.origin.y = snap(y)
+    return rect
+}
+
+public func rect(_ original: CGRect, origin: CGPoint) -> CGRect {
+    var rect = original
+    rect.origin = CGPoint(x: snap(origin.x), y: snap(origin.y))
+    return rect
+}
+
+public func rect(_ original: CGRect, width: CGFloat) -> CGRect {
+    if width < 0 {
+        return original
+    }
+    var rect = original
+    rect.size.width = snap(width)
+    return rect
+}
+
+public func rect(_ original: CGRect, height: CGFloat) -> CGRect {
+    if height < 0 {
+        return original
+    }
+    var rect = original
+    rect.size.height = snap(height)
+    return rect
+}
+
+public func rect(_ original: CGRect, size: CGSize) -> CGRect {
+    var rect = original
+    rect.size = CGSize(width: snap(size.width), height: snap(size.height))
+    return rect
+}

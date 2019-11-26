@@ -12,91 +12,65 @@ extension UIView {
 
     // MARK: - Position
     public var al_x: CGFloat {
-        get { return frame.al_x }
-        set { frame.al_x = newValue }
+        get { return frame.minX }
+        set { frame = rect(frame, x: newValue) }
     }
 
     public var al_y: CGFloat {
-        get { return frame.al_y }
-        set { frame.al_y = newValue }
+        get { return frame.minY }
+        set { frame = rect(frame, y: newValue) }
     }
     
     public var al_origin: CGPoint {
         get { return frame.origin }
-        set { frame.origin = newValue }
+        set { frame = rect(frame, origin: newValue) }
     }
-
+    
     public var al_centerX: CGFloat {
-        get { return frame.al_centerX }
-        set { frame.al_centerX = newValue }
+        get { return center.x }
+        set { center = CGPoint(x: snap(newValue), y: center.y) }
     }
 
     public var al_centerY: CGFloat {
-        get { return frame.al_centerY }
-        set { frame.al_centerY = newValue }
-    }
-    
-    public var al_center: CGPoint {
-        get { return frame.al_center }
-        set { frame.al_center = newValue }
+        get { return center.y }
+        set { center = CGPoint(x: center.x, y: snap(newValue)) }
     }
     
     // MARK: - Size
     public var al_width: CGFloat {
-        get { return frame.al_width }
-        set { frame.al_width = newValue }
+        get { return frame.width }
+        set { frame = rect(frame, width: newValue) }
     }
 
     public var al_height: CGFloat {
-        get { return frame.al_height }
-        set { frame.al_height = newValue }
+        get { return frame.height }
+        set { frame = rect(frame, height: newValue) }
     }
     
     public var al_size: CGSize {
         get { return frame.size }
-        set { frame.size = newValue }
+        set { frame = rect(frame, size: newValue) }
     }
 
     // MARK: - Edges
     public var al_left: CGFloat {
-        get { return frame.al_left }
-        set { frame.al_left = newValue }
+        get { return frame.minX }
+        set { frame = rect(frame, x: newValue) }
     }
     
     public var al_right: CGFloat {
-        get { return frame.al_right }
-        set { frame.al_right = newValue }
+        get { return frame.maxX }
+        set { frame = rect(frame, x: newValue - frame.width) }
     }
     
     public var al_top: CGFloat {
-        get { return frame.al_top }
-        set { frame.al_top = newValue }
+        get { return frame.minY }
+        set { frame = rect(frame, y: newValue) }
     }
 
     public var al_bottom: CGFloat {
-        get { return frame.al_bottom }
-        set { frame.al_bottom = newValue }
-    }
-
-    // MARK: - Alternative Edges
-    public var alternativeLeft: CGFloat {
-        get { return frame.alternativeLeft }
-        set { frame.alternativeLeft = newValue }
-    }
-    
-    public var alternativeRight: CGFloat {
-        get { return frame.alternativeRight }
-        set { frame.alternativeRight = newValue }
-    }
-    
-    public var alternativeTop: CGFloat {
-        get { return frame.alternativeTop }
-        set { frame.alternativeTop = newValue }
-    }
-
-    public var alternativeBottom: CGFloat {
-        get { return frame.alternativeBottom }
-        set { frame.alternativeBottom = newValue }
+        get { return frame.maxY }
+        set { frame = rect(frame, y: newValue - frame.height) }
     }
 
     // MARK: - Automatic Sizing

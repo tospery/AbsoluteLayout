@@ -12,7 +12,6 @@
 		3AF6D37C3B7DF29C19DCACC0145CFD7B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
 		4F9C66B8B8D66CB761064358EA97BD06 /* Pods-AbsoluteLayout_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4C9815B11C5D5F3E5C4800A1D8F049 /* Pods-AbsoluteLayout_Tests-dummy.m */; };
 		9328C75B00F26485E3AA45460765C9CC /* UIView+AbsoluteLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762DD6E8A86EFEFB2160EFC18300FD89 /* UIView+AbsoluteLayout.swift */; };
-		A056DA034323056D9BB19A097997D5C8 /* CGRect+AbsoluteLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22298F4278F1D3F5AD025B77DD993504 /* CGRect+AbsoluteLayout.swift */; };
 		A3189305074D1026A8071A4B3A7805B1 /* AbsoluteLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD822BDAC2F3C402E5E677424CE6C46 /* AbsoluteLayout-dummy.m */; };
 		C2576E9F1D117065D2E9D4A498FE9281 /* Pods-AbsoluteLayout_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 037897BF69CE9DCC29C3D5E3154644FA /* Pods-AbsoluteLayout_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C5D227A5C2E5ACE4B9754BCB2D33D2F3 /* Pods-AbsoluteLayout_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF562952745A1039E3BC6B2A297BDAB /* Pods-AbsoluteLayout_Example-dummy.m */; };
@@ -48,20 +47,19 @@
 		0AD822BDAC2F3C402E5E677424CE6C46 /* AbsoluteLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AbsoluteLayout-dummy.m"; sourceTree = "<group>"; };
 		123F341EAD679C8B6BF6A862959D991F /* UtilsFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UtilsFunction.swift; path = AbsoluteLayout/Classes/UtilsFunction.swift; sourceTree = "<group>"; };
 		131BD925652BEC60A4AFD90E90826899 /* Pods-AbsoluteLayout_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AbsoluteLayout_Tests-Info.plist"; sourceTree = "<group>"; };
-		22298F4278F1D3F5AD025B77DD993504 /* CGRect+AbsoluteLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGRect+AbsoluteLayout.swift"; path = "AbsoluteLayout/Classes/CGRect+AbsoluteLayout.swift"; sourceTree = "<group>"; };
 		2332D03E090147EB11BFD4348CDEE3D0 /* Pods-AbsoluteLayout_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AbsoluteLayout_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		29580303C56DD67AFF35D70FB0FE8D5C /* Pods-AbsoluteLayout_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AbsoluteLayout_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2AFE2F08EED9B10A250632E4AD84469F /* Pods-AbsoluteLayout_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AbsoluteLayout_Example-frameworks.sh"; sourceTree = "<group>"; };
 		2C8CC20C7139D245B0907720D6905DA7 /* Pods-AbsoluteLayout_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AbsoluteLayout_Tests-umbrella.h"; sourceTree = "<group>"; };
 		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		398A0F2FB2CB65193ADCEE3802D5B5F7 /* Pods-AbsoluteLayout_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AbsoluteLayout_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		39C3846006144B77E525FB99ABF589E6 /* Pods_AbsoluteLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AbsoluteLayout_Example.framework; path = "Pods-AbsoluteLayout_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39C3846006144B77E525FB99ABF589E6 /* Pods_AbsoluteLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AbsoluteLayout_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF562952745A1039E3BC6B2A297BDAB /* Pods-AbsoluteLayout_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AbsoluteLayout_Example-dummy.m"; sourceTree = "<group>"; };
 		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		49AFF66F59FFAF40092BE25A6C7E37C1 /* Pods-AbsoluteLayout_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AbsoluteLayout_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		50A0D17CE901DE852C7C894E7EC3541C /* AbsoluteLayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AbsoluteLayout-Info.plist"; sourceTree = "<group>"; };
 		5119A60D96BA23AFA2A47BB70535443A /* UIScrollView+AbsoluteLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+AbsoluteLayout.swift"; path = "AbsoluteLayout/Classes/UIScrollView+AbsoluteLayout.swift"; sourceTree = "<group>"; };
-		675F2742B7FF69FB4EAF8C3DDD77DD59 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		675F2742B7FF69FB4EAF8C3DDD77DD59 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		694A52FC5F59D0E6822C393E0A15B720 /* Pods-AbsoluteLayout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AbsoluteLayout_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6B7C0F8FEAE2B21377A0789339ACB7F0 /* SmartOperator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SmartOperator.swift; path = AbsoluteLayout/Classes/SmartOperator.swift; sourceTree = "<group>"; };
 		71CBAF12948431E7DA6A21F08FFBD82F /* Pods-AbsoluteLayout_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AbsoluteLayout_Tests.modulemap"; sourceTree = "<group>"; };
@@ -70,14 +68,14 @@
 		7EA7898930D15F82A7B41AF8A490C760 /* AbsoluteLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AbsoluteLayout.modulemap; sourceTree = "<group>"; };
 		950666A5D838C377461491CEB8C50CC5 /* Pods-AbsoluteLayout_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AbsoluteLayout_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		968A002701E3830D0E728909AD20DA6A /* CALayer+AbsoluteLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+AbsoluteLayout.swift"; path = "AbsoluteLayout/Classes/CALayer+AbsoluteLayout.swift"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A08E6026722F7CB72B66BCF5D4A34A7E /* AbsoluteLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AbsoluteLayout-umbrella.h"; sourceTree = "<group>"; };
-		B72E77EF9AB1C260083897E2B8A872E9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B72E77EF9AB1C260083897E2B8A872E9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D67ED55FFAAE33914745E5A162992A55 /* AbsoluteLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AbsoluteLayout.xcconfig; sourceTree = "<group>"; };
 		D79C19DA6A0B099D83001DBF569C2162 /* Pods-AbsoluteLayout_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AbsoluteLayout_Example-Info.plist"; sourceTree = "<group>"; };
-		DC358EECD678E4B29F324F3F140BA751 /* AbsoluteLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AbsoluteLayout.framework; path = AbsoluteLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEF613005076BB0B76DB1B9557CE420F /* AbsoluteLayout.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AbsoluteLayout.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		E02E4D11A40847A99CBB13812FB0E99D /* Pods_AbsoluteLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AbsoluteLayout_Tests.framework; path = "Pods-AbsoluteLayout_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC358EECD678E4B29F324F3F140BA751 /* AbsoluteLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AbsoluteLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF613005076BB0B76DB1B9557CE420F /* AbsoluteLayout.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AbsoluteLayout.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E02E4D11A40847A99CBB13812FB0E99D /* Pods_AbsoluteLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AbsoluteLayout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E56969CC6020596CC36B1E8A69F716CF /* Pods-AbsoluteLayout_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AbsoluteLayout_Example.modulemap"; sourceTree = "<group>"; };
 		E5E8BCA6D1E28D851664D5AD6BE10DB7 /* Pods-AbsoluteLayout_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AbsoluteLayout_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EBC85A0B7DF62C0009CAAEA8C7FDADE5 /* AbsoluteLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AbsoluteLayout-prefix.pch"; sourceTree = "<group>"; };
@@ -153,7 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				968A002701E3830D0E728909AD20DA6A /* CALayer+AbsoluteLayout.swift */,
-				22298F4278F1D3F5AD025B77DD993504 /* CGRect+AbsoluteLayout.swift */,
 				6B7C0F8FEAE2B21377A0789339ACB7F0 /* SmartOperator.swift */,
 				5119A60D96BA23AFA2A47BB70535443A /* UIScrollView+AbsoluteLayout.swift */,
 				762DD6E8A86EFEFB2160EFC18300FD89 /* UIView+AbsoluteLayout.swift */,
@@ -396,7 +393,6 @@
 			files = (
 				A3189305074D1026A8071A4B3A7805B1 /* AbsoluteLayout-dummy.m in Sources */,
 				E7F60D217283FBAF9D45FB4A49E14783 /* CALayer+AbsoluteLayout.swift in Sources */,
-				A056DA034323056D9BB19A097997D5C8 /* CGRect+AbsoluteLayout.swift in Sources */,
 				01808DB5A6D533F41F88C99CAD6603C5 /* SmartOperator.swift in Sources */,
 				D389CB717684799D115E66718BF8F55C /* UIScrollView+AbsoluteLayout.swift in Sources */,
 				9328C75B00F26485E3AA45460765C9CC /* UIView+AbsoluteLayout.swift in Sources */,
@@ -549,8 +545,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
