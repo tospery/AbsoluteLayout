@@ -11,107 +11,107 @@ import UIKit
 extension UIView {
 
     // MARK: - Position
-
-    public var al_origin: CGPoint {
-      get { return layer.al_origin }
-      set { layer.al_origin = newValue }
-    }
-
     public var al_x: CGFloat {
-      get { return layer.al_x }
-      set { layer.al_x = newValue }
+        get { return frame.al_x }
+        set { frame.al_x = newValue }
     }
 
     public var al_y: CGFloat {
-      get { return layer.al_y }
-      set { layer.al_y = newValue }
+        get { return frame.al_y }
+        set { frame.al_y = newValue }
+    }
+    
+    public var al_origin: CGPoint {
+        get { return frame.origin }
+        set { frame.origin = newValue }
     }
 
     public var al_centerX: CGFloat {
-      get { return layer.al_centerX }
-      set { layer.al_centerX = newValue }
+        get { return frame.al_centerX }
+        set { frame.al_centerX = newValue }
     }
 
     public var al_centerY: CGFloat {
-      get { return layer.al_centerY }
-      set { layer.al_centerY = newValue }
+        get { return frame.al_centerY }
+        set { frame.al_centerY = newValue }
     }
-
+    
+    public var al_center: CGPoint {
+        get { return frame.al_center }
+        set { frame.al_center = newValue }
+    }
+    
     // MARK: - Size
-
-    public var al_size: CGSize {
-      get { return layer.al_size }
-      set { layer.al_size = newValue }
-    }
-
     public var al_width: CGFloat {
-      get { return layer.al_width }
-      set { layer.al_width = newValue }
+        get { return frame.al_width }
+        set { frame.al_width = newValue }
     }
 
     public var al_height: CGFloat {
-      get { return layer.al_height }
-      set { layer.al_height = newValue }
+        get { return frame.al_height }
+        set { frame.al_height = newValue }
+    }
+    
+    public var al_size: CGSize {
+        get { return frame.size }
+        set { frame.size = newValue }
     }
 
     // MARK: - Edges
-
-    public var al_top: CGFloat {
-      get { return layer.al_top }
-      set { layer.al_top = newValue }
+    public var al_left: CGFloat {
+        get { return frame.al_left }
+        set { frame.al_left = newValue }
     }
-
+    
     public var al_right: CGFloat {
-      get { return layer.al_right }
-      set { layer.al_right = newValue }
+        get { return frame.al_right }
+        set { frame.al_right = newValue }
+    }
+    
+    public var al_top: CGFloat {
+        get { return frame.al_top }
+        set { frame.al_top = newValue }
     }
 
     public var al_bottom: CGFloat {
-      get { return layer.al_bottom }
-      set { layer.al_bottom = newValue }
-    }
-
-    public var al_left: CGFloat {
-      get { return layer.al_left }
-      set { layer.al_left = newValue }
+        get { return frame.al_bottom }
+        set { frame.al_bottom = newValue }
     }
 
     // MARK: - Alternative Edges
-
-    public var top2: CGFloat {
-      get { return layer.top2 }
-      set { layer.top2 = newValue }
+    public var alternativeLeft: CGFloat {
+        get { return frame.alternativeLeft }
+        set { frame.alternativeLeft = newValue }
+    }
+    
+    public var alternativeRight: CGFloat {
+        get { return frame.alternativeRight }
+        set { frame.alternativeRight = newValue }
+    }
+    
+    public var alternativeTop: CGFloat {
+        get { return frame.alternativeTop }
+        set { frame.alternativeTop = newValue }
     }
 
-    public var right2: CGFloat {
-      get { return layer.right2 }
-      set { layer.right2 = newValue }
-    }
-
-    public var bottom2: CGFloat {
-      get { return layer.bottom2 }
-      set { layer.bottom2 = newValue }
-    }
-
-    public var left2: CGFloat {
-      get { return layer.left2 }
-      set { layer.left2 = newValue }
+    public var alternativeBottom: CGFloat {
+        get { return frame.alternativeBottom }
+        set { frame.alternativeBottom = newValue }
     }
 
     // MARK: - Automatic Sizing
-
     @discardableResult
     public func sizeToFit(_ width: CGFloat, _ height: CGFloat) -> CGSize {
-      return sizeToFit(CGSize(width: width, height: height))
+        return sizeToFit(CGSize(width: width, height: height))
     }
 
     @discardableResult
     public func sizeToFit(_ constrainedSize: CGSize) -> CGSize {
-      var newSize = sizeThatFits(constrainedSize)
-      newSize.width = min(newSize.width, constrainedSize.width)
-      newSize.height = min(newSize.height, constrainedSize.height)
-      al_size = newSize
-      return newSize
+        var newSize = sizeThatFits(constrainedSize)
+        newSize.width = min(newSize.width, constrainedSize.width)
+        newSize.height = min(newSize.height, constrainedSize.height)
+        al_size = newSize
+        return newSize
     }
     
 }

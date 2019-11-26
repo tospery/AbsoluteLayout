@@ -10,11 +10,6 @@ import UIKit
 extension CALayer {
 
     // MARK: - Position
-    public var al_origin: CGPoint {
-        get { return frame.origin }
-        set { al_x = newValue.x; al_y = newValue.y }
-    }
-
     public var al_x: CGFloat {
         get { return frame.al_x }
         set { frame.al_x = newValue }
@@ -24,10 +19,10 @@ extension CALayer {
         get { return frame.al_y }
         set { frame.al_y = newValue }
     }
-
-    public var al_center: CGPoint {
-        get { return frame.al_center }
-        set { frame.al_center = newValue }
+    
+    public var al_origin: CGPoint {
+        get { return frame.origin }
+        set { frame.origin = newValue }
     }
 
     public var al_centerX: CGFloat {
@@ -39,32 +34,42 @@ extension CALayer {
         get { return frame.al_centerY }
         set { frame.al_centerY = newValue }
     }
-
-    // MARK: - Size
-    public var al_size: CGSize {
-        get { return frame.size }
-        set { al_width = newValue.width; al_height = newValue.height}
+    
+    public var al_center: CGPoint {
+        get { return frame.al_center }
+        set { frame.al_center = newValue }
     }
 
+    // MARK: - Size
     public var al_width: CGFloat {
-        get { return frame.size.width }
-        set { frame.size.width = snap(newValue) }
+        get { return frame.al_width }
+        set { frame.al_width = snap(newValue) }
     }
 
     public var al_height: CGFloat {
-        get { return frame.size.height }
-        set {  frame.size.height = snap(newValue) }
+        get { return frame.al_height }
+        set { frame.al_height = snap(newValue) }
+    }
+    
+    public var al_size: CGSize {
+        get { return frame.size }
+        set { frame.size = newValue }
     }
 
     // MARK: - Edges
-    public var al_top: CGFloat {
-        get { return frame.al_top }
-        set { frame.al_top = newValue }
+    public var al_left: CGFloat {
+        get { return frame.al_left }
+        set { frame.al_left = newValue }
     }
-
+    
     public var al_right: CGFloat {
         get { return frame.al_right }
         set { frame.al_right = newValue }
+    }
+    
+    public var al_top: CGFloat {
+        get { return frame.al_top }
+        set { frame.al_top = newValue }
     }
 
     public var al_bottom: CGFloat {
@@ -72,30 +77,25 @@ extension CALayer {
         set { frame.al_bottom = newValue }
     }
 
-    public var al_left: CGFloat {
-        get { return frame.al_left }
-        set { frame.al_left = newValue }
-    }
-
     // MARK: - Alternative Edges
-    public var top2: CGFloat {
-        get { return frame.top2 }
-        set { frame.top2 = newValue }
+    public var alternativeLeft: CGFloat {
+        get { return frame.alternativeLeft }
+        set { frame.alternativeLeft = newValue }
+    }
+    
+    public var alternativeRight: CGFloat {
+        get { return frame.alternativeRight }
+        set { frame.alternativeRight = newValue }
+    }
+    
+    public var alternativeTop: CGFloat {
+        get { return frame.alternativeTop }
+        set { frame.alternativeTop = newValue }
     }
 
-    public var right2: CGFloat {
-        get { return frame.right2 }
-        set { frame.right2 = newValue }
-    }
-
-    public var bottom2: CGFloat {
-        get { return frame.bottom2 }
-        set { frame.bottom2 = newValue }
-    }
-
-    public var left2: CGFloat {
-        get { return frame.left2 }
-        set { frame.left2 = newValue }
+    public var alternativeBottom: CGFloat {
+        get { return frame.alternativeBottom }
+        set { frame.alternativeBottom = newValue }
     }
     
 }
